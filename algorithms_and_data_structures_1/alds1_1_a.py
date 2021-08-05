@@ -4,9 +4,10 @@ def insertion_sort():
     # if so, swap the order
 
     len = int(input())
-    num_list = map(int, input().split())
+    num_list = list(map(int, input().split()))
 
-    output = num_list.copy()
+    output = num_list
+    print(" ".join(map(str, output)))
     for i in range(1, len):
         key = output[i]
 
@@ -15,11 +16,9 @@ def insertion_sort():
             output[j + 1] = output[j]
             j -= 1
         output[j + 1] = key
-        print(output)
-    # return output
+        print(" ".join(map(str, output)))
 
 
 if __name__ == "__main__":
 
-    ans = insertion_sort()
-    print(ans)
+    insertion_sort()
