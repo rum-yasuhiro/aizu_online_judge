@@ -1,7 +1,10 @@
-def insertion_sort(len, num_list):
+def insertion_sort():
     # load input
     # loop while elements in list are checked from second to last that if each of them are bigger than all forward elements
     # if so, swap the order
+
+    len = int(input())
+    num_list = map(int, input().split())
 
     output = num_list.copy()
     for i in range(1, len):
@@ -17,7 +20,6 @@ def insertion_sort(len, num_list):
 
 
 if __name__ == "__main__":
-    len = int(input())
-    num_list = map(int, input().split())
 
-    insertion_sort(len, num_list)
+    ans = insertion_sort()
+    print(ans)
