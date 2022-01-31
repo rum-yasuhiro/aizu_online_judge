@@ -1,0 +1,5 @@
+input()
+l1 = set(input().split())
+input()
+l2 = set(input().split())
+print(len(l1 & l2))
